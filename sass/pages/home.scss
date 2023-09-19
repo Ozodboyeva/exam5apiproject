@@ -55,6 +55,12 @@
       row-gap: 30px;
     }
     .card-items {
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(60, 60, 150, 1) 45%,
+        rgba(0, 212, 255, 1) 100%
+      );
       border-radius: 16px;
       border: 1px solid rgba(255, 255, 255, 0.27);
       backdrop-filter: blur(8.5px);
@@ -111,6 +117,7 @@
           margin-top: 4px;
           padding: 20px;
           border-radius: 70%;
+          color: #fff;
           background-color: rgb(104, 148, 187);
         }
       }
@@ -131,6 +138,7 @@
           line-height: normal;
 
           &:hover {
+            color: #fff;
             background-color: #00008b;
           }
         }

@@ -73,6 +73,7 @@
   }
 }
 .card-session .cards .card-items {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(60, 60, 150) 45%, rgb(0, 212, 255) 100%);
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.27);
   -webkit-backdrop-filter: blur(8.5px);
@@ -135,6 +136,7 @@
   margin-top: 4px;
   padding: 20px;
   border-radius: 70%;
+  color: #fff;
   background-color: rgb(104, 148, 187);
 }
 .card-session .cards .card-items .btns {
@@ -155,5 +157,6 @@
   line-height: normal;
 }
 .card-session .cards .card-items .btns .btn__last:hover {
+  color: #fff;
   background-color: #00008b;
 }
