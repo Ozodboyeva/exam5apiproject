@@ -8,7 +8,7 @@
       display: none;
     }
     &-text {
-      width: 100%;
+      width: 50%;
       display: inline-block;
       padding: 15px 10px;
       border-radius: 4px;
@@ -41,14 +41,100 @@
 }
 .card-session {
   padding: 100px 0px;
-  background: #00008b;
-  .card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background: green;
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 30px;
+    }
+    @media (max-width: 700px) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 30px;
+    }
+    .card-items {
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.27);
+      backdrop-filter: blur(8.5px);
+      padding: 10px 40px 19px 20px;
+      @media (max-width: 500px) {
+        padding: 10px 20px 10px 10px;
+      }
+      @media (max-width: 500px) {
+        padding: 10px 10px 10px 8px;
+      }
+      .card__item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .card__item img {
+        border-radius: 50%;
+      }
+      .card__title h2 {
+        color: var(--white-white, #fff);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 112.6%; /* 22.52px */
+      }
+      .card__title p {
+        padding-top: 8px;
+        color: var(--white-white, #fff);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      span {
+        color: red;
+      }
+      .card__parts {
+        margin: 0 auto;
+        text-align: center;
+        color: grey;
+        font-family: Hauora;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .posts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
 
-    .card__items {
-      display: flex;
+        .post {
+          margin-top: 4px;
+          padding: 20px;
+          border-radius: 70%;
+          background-color: rgb(104, 148, 187);
+        }
+      }
+      .btns {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        .btn__last {
+          width: 100%;
+          padding: 18px 0px;
+          margin-top: 12px;
+          border-radius: 10px;
+          background-color: aliceblue;
+          color: blue;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+
+          &:hover {
+            background-color: #00008b;
+          }
+        }
+      }
     }
   }
 }
