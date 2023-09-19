@@ -1,6 +1,11 @@
 .main__part {
   padding: 100px 0px;
-  background-color: #00008b;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(106, 107, 167, 1) 100%,
+    rgba(0, 5, 255, 0.59156162464986) 100%
+  );
   .search__bar {
     display: flex;
 
@@ -40,8 +45,13 @@
   }
 }
 .card-session {
-  padding: 100px 0px;
-  background: green;
+  padding: 10px 0px 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(106, 107, 167, 1) 100%,
+    rgba(0, 5, 255, 0.59156162464986) 100%
+  );
   .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

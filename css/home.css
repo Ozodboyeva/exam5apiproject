@@ -1,6 +1,6 @@
 .main__part {
   padding: 100px 0px;
-  background-color: #00008b;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(106, 107, 167) 100%, rgba(0, 5, 255, 0.5915616246) 100%);
 }
 .main__part .search__bar {
   display: flex;
@@ -51,8 +51,8 @@
 }
 
 .card-session {
-  padding: 100px 0px;
-  background: green;
+  padding: 10px 0px 100px;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(106, 107, 167) 100%, rgba(0, 5, 255, 0.5915616246) 100%);
 }
 .card-session .cards {
   display: grid;
