@@ -1,0 +1,62 @@
+@use "../global";
+@use "../utils/variables" as vrb;
+@use "../utils/mixins" as mxn;
+header {
+  background-image: url(/images/header-images/header-bg.png);
+  background-position: center;
+  background-size: cover;
+  padding: 15px 0px;
+  position: fixed;
+  width: 100%;
+  .header__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__image {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &-titele {
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 61px;
+      background: var(
+        --gradients-title,
+        linear-gradient(92deg, #fff 29.24%, rgba(176, 250, 255, 0) 131.64%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .header__item {
+    display: flex;
+    gap: 15px;
+    .btn {
+      background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+      border: 0;
+      border-radius: 8px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box;
+      color: #ffffff;
+      display: flex;
+      font-family: Phantomsans, sans-serif;
+      font-size: 15px;
+      justify-content: center;
+      text-transform: uppercase;
+      line-height: 1em;
+      max-width: 100%;
+      min-width: 140px;
+      padding: 16px 20px;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+  }
+}
